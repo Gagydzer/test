@@ -1,0 +1,78 @@
+
+.Table-wrapper {
+    position: relative;
+}
+
+.Table-statusText {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.Table th, .Table td {
+    padding: 16px;
+    overflow-wrap: break-word;
+}
+
+.Table th {
+    outline: none;
+    cursor: pointer;
+    transition: all .3s;
+    position: relative;
+    color: #000000d9;
+    font-weight: 500;
+    text-align: left;
+    background: #fafafa;
+    border-bottom: 1px solid rgba(0,0,0,.06);
+
+}
+
+.TableCell-label {
+    display: flex;
+    flex: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+Table .TableCell--active {
+    background: #f5f5f5;
+}
+
+.Table th:before {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 1px;
+    height: 1.6em;
+    background-color: #0000000f;
+    transform: translateY(-50%);
+    transition: background-color .3s;
+    content: "";
+}
+
+.Table thead tr {
+    display:flex;
+}
+
+.Table tbody {
+    display:block;
+    overflow:auto;
+    width:100%;
+}
+
+.Table tbody tr {
+    height: 1px;
+}
+
+.Table tbody tr td {
+    height: inherit;
+}

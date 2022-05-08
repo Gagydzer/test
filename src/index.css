@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+input, select {
+  border-radius: 5px;
+  width: 150px;
+  background: lightgrey;
+  height: 30px;
+  border: 0;
+  padding: 5px 15px 5px 15px;
+  background: #efefef;
+  outline: none;
+  box-sizing: content-box;
+}
+
+input:hover, select:hover, input:focus, select:focus {
+  background: lightgrey
+}

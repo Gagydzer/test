@@ -1,0 +1,44 @@
+
+.Main {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    max-width: 700px;
+    min-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    overflow: hidden;
+}
+
+.Main-tableWrapper {
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.Main-tableWrapper > div, .Main-tableWrapper > div > table {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.Main-controls {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.Main-controls > div:first-child {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+
+.Main-controls > div:last-child {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.Main-controls > div:first-child > *:not(:last-child) {
+    margin-right: 20px;
+}

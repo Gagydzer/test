@@ -1,0 +1,16 @@
+
+.TableSorter {
+
+}
+
+.TableSorter-asc .TableSorter-careetUp {
+    color: #1890ff;
+}
+
+.TableSorter-desc .TableSorter-careetDown {
+    color: #1890ff;
+}
+
+.TableSorter-careet {
+    color: #bfbfbf;
+}
